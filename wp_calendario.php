@@ -19,7 +19,7 @@ function my_init_function() {
 	ff_create_section('wp-calendario-section', 'admin_menu', array(
 			'page_title' => 'WP Calendario',
 			'menu_title' => 'WP Calendario',
-			'capability' => 'manage_options',
+			'capability' => 'edit_posts',
 			'position' => 999,
 		)
 	);
@@ -27,7 +27,7 @@ function my_init_function() {
 			'parent_uid' => 'wp-calendario-section',
 			'page_title' => 'Calendario Settings',
 			'menu_title' => 'Calendario Settings',
-			'capability' => 'manage_options',
+			'capability' => 'edit_posts',
 		)
 	);
 	ff_create_field('the-rangedate-year','datetime',array(
